@@ -8,3 +8,12 @@ body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
+
+.tag {
+  background-color: black;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
