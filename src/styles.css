@@ -6,7 +6,17 @@
 
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Helvetica Neue", Arial, sans-serif;
+  "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+
+
+.tag-view {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tag {
@@ -16,4 +26,33 @@ body {
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.courses-container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.course {
+  width: 30%;
+  height: 30vw;
+  min-width: 300px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.course-image {
+  max-width: 60%;
+  max-height: 60%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto;
 }

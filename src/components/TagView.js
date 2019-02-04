@@ -1,14 +1,24 @@
 import React from 'react'
 
 class TagView extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
-    return this.props.tags.map(tag => {
-      return <span className="tag">{tag.name} | {tag.numberOfCourses}</span>
-    })
+    return (
+      <div className="tag-view">
+        {
+          this.props.tags.map(tag => {
+            return (
+              <span
+                key={tag.name}
+                className="tag"
+                onClick={() => this.props.onTagClick(tag)}
+              >
+                {tag.name} | {tag.numberOfCourses}
+              </span>
+            )
+          })
+        }
+      </div>
+    )
   }
 }
 
